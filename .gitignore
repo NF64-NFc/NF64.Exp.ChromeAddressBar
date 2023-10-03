@@ -1,0 +1,14 @@
+# IDE - Visual Studio
+.vs/
+*.csproj.user
+*.user
+
+# IDE - Visual Studio - Compiled output
+bin/
+obj/
+
+# IDE - Visual Studio - NuGet packages
+packages/
+
+#Allow dll
+!*.dll
