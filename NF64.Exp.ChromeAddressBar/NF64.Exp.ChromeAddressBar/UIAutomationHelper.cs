@@ -29,7 +29,7 @@ namespace NF64.Exp.ChromeAddressBar
         {
             var walker = TreeWalker.ControlViewWalker;
             var childElem = walker.GetFirstChild(uiaElem);
-            do
+            while (true)
             {
                 if (childElem is null)
                     break;
@@ -39,8 +39,6 @@ namespace NF64.Exp.ChromeAddressBar
 
                 childElem = walker.GetNextSibling(childElem);
             }
-            while (true);
-
             return null;
         }
     }
